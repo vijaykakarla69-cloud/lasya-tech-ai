@@ -4,6 +4,7 @@
 .hero-hanger span{top:100%;z-index:1;width:72px;height:72px;border-radius:21px;box-shadow:0 18px 28px rgba(0,0,0,.2);overflow:hidden}
 .hero-hanger span:after{content:"";position:absolute;inset:1px;border-radius:20px;background:linear-gradient(135deg,rgba(255,255,255,.18),transparent 42%);pointer-events:none}
 .hero-hanger span svg{position:relative;z-index:1;stroke-width:2.5}
-.hanger-purple{height:105px!important}.hanger-blue{height:155px!important}.hanger-green{height:135px!important}.hanger-orange{height:115px!important}.hanger-lime{height:165px!important}.hanger-black{height:92px!important}
+.hanger-black{left:13%;height:92px!important}.hanger-top-green{right:22%;height:110px!important}.hanger-orange{left:2%;top:275px;height:105px!important}.hanger-blue{right:10%;top:255px;height:105px!important}.hanger-bottom-green{left:12%;top:470px;height:78px!important}.hanger-lime{right:20%;top:470px;height:78px!important}
 @media(max-width:850px){.hero-hanger{transform:scale(.78);transform-origin:top center}}
-@media(max-width:520px){.hero-hanger{transform:scale(.58);transform-origin:top center}}
+@media(max-width:850px){.hanger-black{left:8%}.hanger-top-green{right:8%}.hanger-blue{right:1%}.hanger-bottom-green{left:3%}.hanger-lime{right:5%}}
+@media(max-width:520px){.hero-hanger{transform:scale(.58);transform-origin:top center}.hanger-black{left:-3%}.hanger-top-green{right:-5%}.hanger-orange{left:-13%;top:230px}.hanger-blue{right:-10%;top:225px}.hanger-bottom-green{left:-5%;top:400px}.hanger-lime{right:-10%;top:400px}}
