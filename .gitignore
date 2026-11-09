@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Vite / production output
+dist/
+.vite/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs and debug output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local runtime data created by the Express API
+server/data/*.jsonl
+
+# Archives and local tooling artifacts
+*.tar.gz
+.DS_Store
+Thumbs.db
