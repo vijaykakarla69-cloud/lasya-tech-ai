@@ -14,12 +14,23 @@ main section.motion-section.is-visible>.platform-grid>*:nth-child(4),main sectio
 .chart svg path,.display-chart svg path{stroke-dasharray:900;stroke-dashoffset:900;animation:draw-chart 2.2s cubic-bezier(.2,.8,.2,1) .25s forwards}
 .payout-ticker{animation:payout-marquee 24s linear infinite}.payout-panel:hover .payout-ticker{animation-play-state:paused}
 .ai-panel{animation:panel-breathe 7s ease-in-out infinite}.ai-panel:hover{animation-play-state:paused}
+.product-visual .pay-lines,.product-visual .currency-list,.product-visual .payout-box,.product-visual .yield-box,.product-visual .ai-box{animation:visual-lift 5s ease-in-out infinite}
+.card-fan div{animation:card-drift 5s ease-in-out infinite}.card-fan div:nth-child(2){animation-delay:-1.2s}.card-fan div:nth-child(3){animation-delay:-2.4s}
+.tiny-card{animation:tiny-card-float 5.5s ease-in-out infinite}.tiny-card.blue{animation-delay:-1.5s}.tiny-card.lime{animation-delay:-3s}
+.big-card{animation:big-card-float 6s ease-in-out infinite}.blue-card{animation-delay:-1.7s}.lime-card{animation-delay:-3.4s}
+.bank-lines i,.forecast-chart span,.yield-bars i{transform-origin:bottom;animation:bar-pulse 3.8s ease-in-out infinite}.bank-lines i:nth-child(2),.forecast-chart span:nth-child(2),.yield-bars i:nth-child(2){animation-delay:-.5s}.bank-lines i:nth-child(3),.forecast-chart span:nth-child(3),.yield-bars i:nth-child(3){animation-delay:-1s}.bank-lines i:nth-child(4),.forecast-chart span:nth-child(4),.yield-bars i:nth-child(4){animation-delay:-1.5s}.bank-lines i:nth-child(5),.forecast-chart span:nth-child(5),.yield-bars i:nth-child(5){animation-delay:-2s}
+.workspace-app,.tour-display,.auto-panel,.payout-panel{transition:transform .35s ease,box-shadow .35s ease}.workspace-app:hover,.tour-display:hover,.auto-panel:hover,.payout-panel:hover{transform:translateY(-5px);box-shadow:0 24px 55px rgba(0,0,0,.12)}
 @keyframes hero-pill-in{from{opacity:0;transform:translate(-50%,-18px)}to{opacity:1;transform:translate(-50%,0)}}
 @keyframes tile-float{0%,100%{transform:translateY(0)}50%{transform:translateY(9px)}}
 @keyframes draw-chart{to{stroke-dashoffset:0}}
 @keyframes payout-marquee{0%,12%{transform:translateY(0)}88%,100%{transform:translateY(-50%)}}
 @keyframes panel-breathe{0%,100%{box-shadow:0 25px 65px rgba(0,0,0,.17)}50%{box-shadow:0 31px 78px rgba(0,0,0,.23)}}
+@keyframes visual-lift{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes card-drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-7px) rotate(2deg)}}
+@keyframes tiny-card-float{0%,100%{filter:brightness(1);margin-top:0}50%{filter:brightness(1.08);margin-top:-5px}}
+@keyframes big-card-float{0%,100%{margin-top:0}50%{margin-top:-8px}}
+@keyframes bar-pulse{0%,100%{transform:scaleY(1);opacity:.82}50%{transform:scaleY(1.08);opacity:1}}
 @keyframes content-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes card-in{from{opacity:0;transform:translateY(24px) scale(.985)}to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){.hero-brand-pill,.hero-hanger,.hero-hanger span,.chart svg path,.display-chart svg path,.payout-ticker,.ai-panel{animation:none!important}.hero-product a,.product-card{transition:none}}
+@media(prefers-reduced-motion:reduce){.hero-brand-pill,.hero-hanger,.hero-hanger span,.chart svg path,.display-chart svg path,.payout-ticker,.ai-panel,.product-visual .pay-lines,.product-visual .currency-list,.product-visual .payout-box,.product-visual .yield-box,.product-visual .ai-box,.card-fan div,.tiny-card,.big-card,.bank-lines i,.forecast-chart span,.yield-bars i{animation:none!important}.hero-product a,.product-card{transition:none}}
 @media(prefers-reduced-motion:reduce){main section.motion-section,footer .final-cta.motion-section,main section.motion-section.is-visible,footer .final-cta.motion-section.is-visible{opacity:1;transform:none;transition:none}main section.motion-section.is-visible>.section-intro,main section.motion-section.is-visible>.platform-grid>*,main section.motion-section.is-visible>.product-grid>*,main section.motion-section.is-visible>.testimonial-grid>*,main section.motion-section.is-visible>.blog-grid>*,main section.motion-section.is-visible>.resource-grid>*,main section.motion-section.is-visible>.company-grid>*{animation:none}}
