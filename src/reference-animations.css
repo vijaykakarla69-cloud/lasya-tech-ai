@@ -28,6 +28,7 @@ main section.motion-section.is-visible>.platform-grid>*:nth-child(4),main sectio
 @keyframes tile-float{0%,100%{transform:translate3d(var(--mx,0),var(--my,0),0) rotate(var(--mr,0))}50%{transform:translate3d(var(--mx,0),calc(var(--my,0) + 9px),0) rotate(calc(var(--mr,0) + 2deg))}}
 @keyframes icon-jump{0%{transform:translate3d(var(--mx,0),var(--my,0),0) scale(1) rotate(var(--mr,0))}35%{transform:translate3d(var(--mx,0),calc(var(--my,0) - 16px),0) scale(1.08) rotate(calc(var(--mr,0) - 4deg))}65%{transform:translate3d(var(--mx,0),calc(var(--my,0) + 3px),0) scale(.98) rotate(calc(var(--mr,0) + 2deg))}100%{transform:translate3d(var(--mx,0),var(--my,0),0) scale(1) rotate(var(--mr,0))}}
 @keyframes icon-return{0%{transform:translate3d(var(--mx,0),var(--my,0),0) rotate(var(--mr,0))}40%{transform:translate3d(0,-15px,0) rotate(-5deg)}70%{transform:translate3d(0,4px,0) rotate(2deg)}100%{transform:translate3d(0,0,0) rotate(0)}}
+@keyframes rope-return{0%{transform:rotate(var(--rope-rot,0deg))}45%{transform:rotate(-3deg)}75%{transform:rotate(1.5deg)}100%{transform:rotate(0)}}
 @keyframes draw-chart{to{stroke-dashoffset:0}}
 @keyframes payout-marquee{0%,12%{transform:translateY(0)}88%,100%{transform:translateY(-50%)}}
 @keyframes panel-breathe{0%,100%{box-shadow:0 25px 65px rgba(0,0,0,.17)}50%{box-shadow:0 31px 78px rgba(0,0,0,.23)}}
