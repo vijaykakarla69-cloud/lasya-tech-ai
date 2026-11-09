@@ -13,7 +13,7 @@ main section.motion-section.is-visible>.platform-grid>*:nth-child(4),main sectio
 .hero-product:nth-child(2){transition-delay:.08s}.hero-product:nth-child(3){transition-delay:.16s}.hero-product:nth-child(4){transition-delay:.24s}
 .hero-product-icon{transition:transform .3s ease}.hero-product a:hover .hero-product-icon{animation:icon-jump .65s cubic-bezier(.2,.8,.2,1) both;transform:rotate(-8deg) scale(1.08)}
 .product-card:hover .product-icon,.resource-card:hover .resource-icon,.space-tile:hover .space-icon,.company-card:hover .company-index{animation:icon-jump .65s cubic-bezier(.2,.8,.2,1) both}
-.cursor-reactive{transform:perspective(900px) rotateX(var(--cursor-y,0deg)) rotateY(var(--cursor-x,0deg));transition:transform .25s cubic-bezier(.2,.8,.2,1);will-change:transform}.cursor-reactive:hover{transform:perspective(900px) rotateX(var(--cursor-y,0deg)) rotateY(var(--cursor-x,0deg)) translateY(-4px)}
+.cursor-reactive{transform:perspective(900px) rotateX(var(--cursor-y,0deg)) rotateY(var(--cursor-x,0deg)) !important;transition:transform .25s cubic-bezier(.2,.8,.2,1);will-change:transform}.cursor-reactive:hover{transform:perspective(900px) rotateX(var(--cursor-y,0deg)) rotateY(var(--cursor-x,0deg)) translateY(-4px) !important}
 .chart svg path,.display-chart svg path{stroke-dasharray:900;stroke-dashoffset:900;animation:draw-chart 2.2s cubic-bezier(.2,.8,.2,1) .25s forwards}
 .payout-ticker{animation:payout-marquee 24s linear infinite}.payout-panel:hover .payout-ticker{animation-play-state:paused}
 .ai-panel{animation:panel-breathe 7s ease-in-out infinite}.ai-panel:hover{animation-play-state:paused}
