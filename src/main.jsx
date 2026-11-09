@@ -7,6 +7,7 @@ import './resources.css';
 import './companies.css';
 import './compact.css';
 import './hero-reference.css';
+import './connector-fix.css';
 
 const products = [
   {icon:'◈', name:'Web Design', tag:'Clear, conversion-ready sites', copy:'Shape a digital presence that makes your value obvious.', tone:'purple'},
