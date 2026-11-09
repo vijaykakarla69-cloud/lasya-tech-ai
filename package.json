@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"node server/server.js\"",
+    "dev:frontend": "vite",
+    "dev:backend": "node server/server.js",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -14,7 +16,10 @@
     "react": "latest",
     "react-dom": "latest",
     "lucide-react": "latest",
-    "framer-motion": "latest"
+    "framer-motion": "latest",
+    "express": "latest",
+    "cors": "latest",
+    "concurrently": "latest"
   },
   "devDependencies": {}
 }
