@@ -1,2 +1,7 @@
 /* Keep every hanging connector short and attached directly to its icon. */
-.hero-hanger span{top:100%}
+.hero-hanger{height:130px!important;border-left:0!important}
+.hero-hanger:before{content:"";position:absolute;inset:0 auto 0 50%;width:2px;background:#c6c7c3}
+.hero-hanger span{top:100%;z-index:1}
+.hanger-purple{height:105px!important}.hanger-blue{height:155px!important}.hanger-green{height:135px!important}.hanger-orange{height:115px!important}.hanger-lime{height:165px!important}.hanger-black{height:92px!important}
+@media(max-width:850px){.hero-hanger{transform:scale(.78);transform-origin:top center}}
+@media(max-width:520px){.hero-hanger{transform:scale(.58);transform-origin:top center}}
